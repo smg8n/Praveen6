@@ -847,7 +847,7 @@ void killctrl(int sig, siginfo_t *sainfo, void *ptr)
 static int satimer()
 {
 	struct itimerval t;
-	t.it_value.tv_sec = 2000;
+	t.it_value.tv_sec = 20;
 	t.it_value.tv_usec = 0;
 	t.it_interval.tv_sec = 0;
 	t.it_interval.tv_usec = 0;
